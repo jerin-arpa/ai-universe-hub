@@ -51,11 +51,11 @@ const handleShowModal = async (id) => {
                     <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                 </form>
 
-                <div class="flex flex-col md:flex-row lg:flex-row gap-5">
+                <div class="flex flex-col md:flex-col lg:flex-row gap-5">
                     <div class="flex-1 bg-red-50 border-red-300 rounded-2xl border-2 p-10">
                         <h3 class="font-bold text-2xl mb-5">${data?.data?.description}</h3>
 
-                        <div class="flex justify-between gap-5">
+                        <div class="flex flex-wrap justify-between gap-5">
                             <div class="p-5 bg-white rounded-2xl text-center text-green-600 font-bold">
                             ${data?.data?.pricing[0].price} <br>
                             ${data?.data?.pricing[0].plan}
@@ -72,7 +72,7 @@ const handleShowModal = async (id) => {
                             </div>
                         </div>
 
-                        <div class="flex mt-5 gap-5">
+                        <div class="flex flex-wrap mt-5 gap-5">
                         
                             <div class="flex-1">
                                  <h2 class="card-title font-bold text-2xl mb-5">Features </h2>
